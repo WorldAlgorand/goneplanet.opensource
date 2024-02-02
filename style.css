@@ -1,3 +1,11 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    background: #fafafa;
+}
+
 .container {
     position: relative;
     display: flex;
@@ -29,6 +37,11 @@
 #connectButton {
     margin-bottom: 16px;
     color: #eb874b;
+}
+
+#connectButton img {
+    width: 36px;
+    margin-right: 16px;
 }
 
 #walletID span{
@@ -72,8 +85,8 @@
 
 /* Loading dots styles */
 @keyframes opacity {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
+	0% { opacity: 1; }
+	100% { opacity: 0; }
 }
 
 .loadingButton {
@@ -85,7 +98,7 @@
 }
 
 #loading {
-    position: absolute;
+	position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -98,21 +111,21 @@
 }
 
 #loading span:not(:last-child) {
-    margin-right: 5px;
+	margin-right: 5px;
 }
 
 #loading span {
-    animation-name: opacity;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+	animation-name: opacity;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
 }
 
 #loading span:nth-child(2) {
-    animation-delay: 100ms;
-    animation-delay: 100ms;
+	animation-delay: 100ms;
+	animation-delay: 100ms;
 }
 
 #loading span:nth-child(3) {
-    animation-delay: 300ms;
-    animation-delay: 300ms;
+	animation-delay: 300ms;
+	animation-delay: 300ms;
 }
